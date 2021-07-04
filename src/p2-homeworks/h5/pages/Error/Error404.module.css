@@ -1,0 +1,21 @@
+.errorWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30vh;
+}
+.errorCode{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ccc;
+    background-color: #006bb7;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 7px rgba(124, 124, 124, 0.7);
+}
+.errorMessage{
+    font-size: 40px;
+    font-weight: 500;
+    color: #0073c1;
+}
