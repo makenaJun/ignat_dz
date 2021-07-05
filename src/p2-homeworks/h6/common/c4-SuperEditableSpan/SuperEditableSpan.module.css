@@ -1,0 +1,11 @@
+.default {
+    color: #006bb7;
+    font-weight: 500;
+    display: inline-flex;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.default::before {
+    content: '\00270E'
+}
