@@ -1,0 +1,14 @@
+.wrapperItemData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperData {
+    width: 210px;
+    width-max: 500px;
+    padding: 20px 0 5px 20px;
+}
+
+.wrapperButton {
+    margin-left: 17px;
+}
