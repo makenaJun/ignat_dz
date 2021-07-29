@@ -1,0 +1,21 @@
+.wrappBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.timeBlock {
+    padding-top: 1em;
+}
+
+.dateBlock {
+    height: 1em;
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: center;
+}
