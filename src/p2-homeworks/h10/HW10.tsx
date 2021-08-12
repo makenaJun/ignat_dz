@@ -23,17 +23,14 @@ function HW10() {
     return (
         <div>
             <hr/>
-            homeworks 10
-
-            {/*should work (должно работать)*/}
-            {loading ? <Loader/> : <div>
-                <SuperButton onClick={setLoading}>set loading...</SuperButton>
+            <div style={{padding: '10px'}}>
+                homeworks 10
+                {loading ? <Loader/> : <div>
+                    <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                </div>
+                }
             </div>
-            }
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
             <hr/>
         </div>
     )

@@ -7,17 +7,17 @@
 }
 
 .red {
-    background: lightcoral;
+    background: crimson;
 }
 
 .red-text {
-    color: aqua;
+    color: #e8d802;
 }
 
-.some {
-    background: lightgreen;
+.white {
+    background: #fff;
 }
 
-.some-text {
-    color: darkslateblue;
+.white-text {
+    color: #191919;
 }

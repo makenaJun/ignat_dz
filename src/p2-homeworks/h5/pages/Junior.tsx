@@ -8,7 +8,7 @@ import HW11 from '../../h11/HW11';
 function Junior() {
     return (
         <div>
-            <h2>Junior page</h2>
+            <h2 style={{padding: '10px'}}>Junior page</h2>
             <HW7/>
             <HW8/>
             <HW9/>

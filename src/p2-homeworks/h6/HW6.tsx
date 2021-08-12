@@ -17,23 +17,20 @@ function HW6() {
     return (
         <div>
             <hr/>
-            homeworks 6
-
-            {/*should work (должно работать)*/}
-            <div style={{'marginLeft': '20px'}}>
-                <div>
-                    <SuperEditableSpan
-                        value={value}
-                        onChangeText={setValue}
-                        spanProps={{children: value ? undefined : 'enter text...'}}
-                    />
+            <div style={{padding: '10px'}}>
+                homeworks 6
+                <div style={{'marginLeft': '20px'}}>
+                    <div>
+                        <SuperEditableSpan
+                            value={value}
+                            onChangeText={setValue}
+                            spanProps={{children: value ? undefined : 'enter text...'}}
+                        />
+                    </div>
+                    <SuperButton onClick={save}>save</SuperButton>
+                    <SuperButton onClick={restore}>restore</SuperButton>
                 </div>
-                <SuperButton onClick={save}>save</SuperButton>
-                <SuperButton onClick={restore}>restore</SuperButton>
             </div>
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
             <hr/>
         </div>
     )

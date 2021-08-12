@@ -1,10 +1,11 @@
 import React from 'react'
+import HW12 from '../../h12/HW12'
 
 function JuniorPlus() {
     return (
         <div>
-            <h2>JuniorPlus page</h2>
-            Сюда будет добавлен контент;)
+            <h2 style={{padding: '10px'}}>JuniorPlus page</h2>
+            <HW12/>
         </div>
     )
 }

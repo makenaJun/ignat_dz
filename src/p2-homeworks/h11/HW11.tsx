@@ -16,27 +16,23 @@ function HW11() {
     return (
         <div>
             <hr/>
-            homeworks 11
+            <div style={{padding: '10px'}}>
+                homeworks 11
+                <div className={styles.rangeBlock} style={{marginLeft: '55px'}}>
+                    <SuperRange onChangeRange={setValue1} value={value1}/>
+                    <span className={styles.labelBlock}>{value1}</span>
+                </div>
 
-            {/*should work (должно работать)*/}
-            <div className={styles.rangeBlock} style={{marginLeft: '55px'}}>
-                <SuperRange onChangeRange={setValue1} value={value1}/>
-                <span className={styles.labelBlock}>{value1}</span>
+                <div className={styles.rangeBlock}>
+                    <span className={styles.labelBlock}>{value1}</span>
+                    <SuperDoubleRange
+                        onChangeRange={onChangeHandler}
+                        value={[value1, value2]}
+                    />
+                    <span className={styles.labelBlock}>{value2}</span>
+                </div>
             </div>
 
-            <div className={styles.rangeBlock}>
-                <span className={styles.labelBlock}>{value1}</span>
-                <SuperDoubleRange
-                    onChangeRange={onChangeHandler}
-                    value={[value1, value2]}
-                />
-                <span className={styles.labelBlock}>{value2}</span>
-            </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
             <hr/>
         </div>
     )

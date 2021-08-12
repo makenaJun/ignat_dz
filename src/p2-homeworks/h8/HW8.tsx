@@ -22,7 +22,6 @@ export const initialPeople = [
 function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
 
-    // need to fix any
     const finalPeople = people.map((p: UserType) => (
         <div key={p._id} className={styles.wrapperItemData}>
             <span>{p.name}</span> <span>{p.age}</span>
@@ -36,20 +35,18 @@ function HW8() {
     return (
         <div>
             <hr/>
-            homeworks 8
+            <div style={{padding: '10px'}}>
+                homeworks 8
 
-            {/*should work (должно работать)*/}
-            <div className={styles.wrapperData}>{finalPeople}</div>
+                <div className={styles.wrapperData}>{finalPeople}</div>
 
-            <div className={styles.wrapperButton}>
-                <SuperButton onClick={sortUpHandler}>sort up</SuperButton>
-                <SuperButton onClick={sortDownHandler}>sort down</SuperButton>
-                <SuperButton onClick={checkHandler}>check 18</SuperButton>
+                <div className={styles.wrapperButton}>
+                    <SuperButton onClick={sortUpHandler}>sort up</SuperButton>
+                    <SuperButton onClick={sortDownHandler}>sort down</SuperButton>
+                    <SuperButton onClick={checkHandler}>check 18</SuperButton>
+                </div>
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
             <hr/>
         </div>
     )
