@@ -1,0 +1,10 @@
+.rangeBlock {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.labelBlock {
+    width: 2em;
+}
